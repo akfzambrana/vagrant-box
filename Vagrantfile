@@ -1,7 +1,8 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "ubuntu/trusty64"
+#  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "c3-box-1.box"
 #  config.vm.box_url = "http://c3ai.com"
 
   config.vm.network :private_network, ip: "10.0.1.7"

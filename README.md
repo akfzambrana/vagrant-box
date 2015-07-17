@@ -12,9 +12,16 @@ You can configure two things in this virtual machine, using environment variable
   - Amount of memory: vm_memory (default is 2048MB)
   - Amount of cpus: vm_cpus (default is 4)  
 
-### Installed components  
-  - [] Git
-  - [] nodejs
-  - [] npm
-  - [] grunt
-  - [] gulp
+### Box 1
+#### Installed components  
+  - git
+  - nodejs
+  - npm
+  
+### Box 2
+  - grunt
+  - gulp
+
+### Todo
+  - Apache server or Lamp environment
+  - Create recipes to provision
