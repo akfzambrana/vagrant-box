@@ -6,7 +6,7 @@ My main goal is have a base environment for development without highly customize
 - Oracle Virtual Box https://www.virtualbox.org/wiki/Downloads
 - Vagrant https://www.vagrantup.com/downloads.html
 
-I'm using a customized box based on ubuntu/trusty64 but with all we need to work as a frontend developer
+I'm using a customized box based on ubuntu/vivid64 but with all we need to work as a frontend developer
 
 You can configure two things in this virtual machine, using environment variables:
   - Amount of memory: vm_memory (default is 2048MB)
@@ -37,3 +37,4 @@ It's my frontend development basic environment
   - Create recipes to provision
   - Apache server or Lamp environment
   - Make nodebots box work
+  - Upload modified box to distribution server
