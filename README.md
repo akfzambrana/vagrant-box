@@ -18,23 +18,30 @@ If you want to know more about multi-VM environments, please take a look to the 
 
 ## Usage
 (This commands need to run in the VM directory)
+
 ### Start (turn on)
 `vagrant up <box name>`
+
 ### SSH access
 `vagrant ssh <box name>`
 
-### Front box [frontend]
+### Updating box configurations (if needed)
+`vagrant provision <box name>`
+
+### Shut down (turn off)
+`vagrant halt <box name>`
+
+## Boxes available
+### Front-end box [name: **frontend**]
 It's my frontend development basic environment
 
-#### Installed components
+### Installed components
   - git
   - nodejs
   - npm
   - grunt
   - gulp
 
-### Todo
-  - Create recipes to provision
+## Todo
   - Apache server or Lamp environment
   - Make nodebots box work
-  - Upload modified box to distribution server

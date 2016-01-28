@@ -6,9 +6,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = "ubuntu/vivid64"
   end
 
-  config.vm.define "nodebots" do |nodebots|
+#  config.vm.define "nodebots" do |nodebots|
     config.vm.box = "ubuntu/vivid64"
-  end
+#  end
 
 #  config.vm.box_url = "http://c3ai.com"
 
@@ -40,5 +40,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       "setextradata", :id,
       "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"
     ]
+  end
+
+  config.vm.define "frontend" do |frontend|
+    config.vm.provision "shell", path: "provision-frontend.sh"
   end
 end
