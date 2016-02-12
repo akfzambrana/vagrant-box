@@ -44,3 +44,4 @@ It's my frontend development basic environment
 ## Todo
   - Apache server or Lamp environment
   - Make nodebots box work
+  - Install tmux (install, customize and add the usage in README file)
