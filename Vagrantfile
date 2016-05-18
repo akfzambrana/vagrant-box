@@ -3,8 +3,8 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.define "frontend" do |frontend|
-    config.vm.box = "ubuntu/xenial64"
-    #config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/vivid/current/vivid-server-cloudimg-amd64-vagrant-disk1.box"
+    config.vm.box = "ubuntu-15.04"
+    config.vm.box_url = "https://github.com/kraksoft/vagrant-box-ubuntu/releases/download/15.04/ubuntu-15.04-amd64.box"
   end
 
   config.vm.network :private_network, ip: "10.0.1.7"
